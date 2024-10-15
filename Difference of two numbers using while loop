@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,z;
+	z=0;
+	printf("Enter first number:");
+	scanf("%d",&a);
+	printf("Enter second number:");
+	scanf("%d",&b);
+	while(a>b)
+	{
+		z++;
+		b++;
+		if(a==b)
+		{
+			break;
+		}
+	}
+	while(a<b)
+	{
+		z--;
+		a++;
+		if(a==b)
+		{
+			break;
+		}
+	}
+	printf("Difference is %d",z);
+	return 0;
+}
