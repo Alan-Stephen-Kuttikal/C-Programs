@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,c,Largest;
+	printf("Enter first number:");
+	scanf("%d",&a);
+	printf("Enter second number:");
+	scanf("%d",&b);
+	printf("Enter third number:");
+	scanf("%d",&c);
+	Largest=a>c?(a>b?a:b):(b>c?b:c);
+	printf("Largets among the three numbers is %d",Largest);
+	return 0;
+}
