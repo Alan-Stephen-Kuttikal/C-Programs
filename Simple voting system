@@ -1,0 +1,106 @@
+#include<stdio.h>
+int main()
+	{	
+		int i,j,p,q,r,s,z,c,a,b;
+		p=0;
+		q=0;
+		printf("Enter code to access the voting system:");
+		scanf("%d",&b);
+		if (b==2404)
+		{
+			printf("Enter number of voters:");
+			scanf("%d",&z);
+			while( z>0)
+			{
+				printf("Enter your age:");
+				scanf("%d",&i);
+				if(i>=18)
+				{
+					printf("President Candidate:-\n1.Alan\n2.Aakash");
+					printf("\nEnter S.no to vote:");
+					scanf("%d",&j);
+					if(j==1)
+					{
+						p++;
+					}
+					else if(j==2)
+					{
+						q++;
+					}
+					printf("Vice President Candidate:-\n1.Mannuel\n2.Rohan");
+					printf("\nEnter S.no to vote:");
+					scanf("%d",&j);
+					if(j==1)
+					{
+						r++;
+					}
+					else if(j==2)
+					{
+						s++;
+					}
+				
+				}
+				else
+						printf("Sorry,you are not of legal age to vote\n");
+				z--;
+			}
+		}
+		printf("Enter code to Show result:");
+		scanf("%d",&c);
+		if (c==2404)
+		{
+			printf("Enter the S.no of following to get result:-\n1.President\n2.Vice President\n3.Both\nEnter your option:");
+			scanf("%d",&a);
+			if(a==1)
+			{
+				if( p>q)
+				printf("President Election Winner:Alan ");
+				else if( q>p)
+					printf("President Election Winner:Aakash ");
+				else
+					printf("Equal number of votes");
+			}
+			else if(a==2)
+			{
+				if( r>s)
+					printf("Vice President Election Winner:Mannuel ");
+				else if( s>r)
+					printf("Vice President Election Winner:Rohan ");
+				else
+					printf("Equal number of votes");	
+			}	
+			else if(a==3)
+			{
+				if( p>q)	
+				{
+					if(r>s)
+						printf("President Election winner:Alan\nVice President election winner:Mannuel");
+					else if(s>r)
+						printf("President Election winner:Alan\nVice President election winner:Rohan");
+					else
+						printf("President Election winner:Alan\nVice President election has ended with equal number of votes");
+				}
+				else if(q>p)
+				{
+					if(r>s)
+						printf("President Election winner:Aakash\nVice President election winner:Mannuel");
+					else if(s>r)
+						printf("President Election winner:Aakash\nVice President election winner:Rohan");
+					else
+						printf("President Election winner:Aakash\nVice President election has ended with equal number of votes");
+				}
+				else if(r==s)
+				{
+					if(r>s)
+						printf("President election has ended with equal number of votes\nVice President election winner:Mannuel");
+					else if(s>r)
+						printf("President election has ended with equal number of votes\nVice President election winner:Rohan");
+					else
+						printf("Both President Election and Vice President Election has ended with equal number of votes");	
+				}
+			}
+		}
+		else
+		printf("Sorry,you don't have permisssion to view the result'");
+		return 0;
+ 	}
