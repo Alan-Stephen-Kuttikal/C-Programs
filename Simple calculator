@@ -1,0 +1,50 @@
+#include<stdio.h>
+int main()
+{
+	int n1,n2,o,m,c,b;
+	c=1;
+	while(c==1)
+	{
+		printf("\n1.Addition\n2.Substraction\n3.Multiplication\n4.Division\n5.Reminder\n6.Display number in history\nEnter S.no of operation u want to use:");
+		scanf("%d",&o);
+		if(o!=6)
+		{
+			printf("Enter First number:");
+			scanf("%d",&n1);
+			printf("Enter Second number:");
+			scanf("%d",&n2);
+		}
+		switch(o)
+		{
+			case 1:m=n1+n2;
+				printf("Sum of %d and %d is %d",n1,n2,m);
+				break;
+			case 2:m=n1-n2;
+				printf("Difference of %d and %d is %d",n1,n2,m);
+				break;
+			case 3:m=n1*n2;
+				printf("Product of %d and %d is %d",n1,n2,m);
+				break;
+			case 4:m=n1/n2;
+				printf("Dividing %d and %d we get %d",n1,n2,m);
+				break;
+			case 5:m=n1%n2;
+				printf("Reminder of %d by %d is %d",n1,n2,m);
+				break;
+			default:printf("Store value=%d\n",m);
+					printf("Do you want to change this(1/0):");
+					scanf("%d",&b);
+					if(b==1)
+					{
+						printf("Enter new value:");
+						scanf("%d",&m);		
+					}
+					else
+						break;			
+		}
+		c=0;
+		printf("\nDo you want to continue(1/0):");
+		scanf("%d",&c);
+	}
+	return 0;
+}
