@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+	int i,n;
+	i=2;
+	printf("Enter a number:");
+	scanf("%d",&n);
+	printf("Even numbers from 1 to %d:\n",n);
+	do
+	{
+		printf("%d\n",i);
+		i=i+2;
+	}while(i<=n);
+	return 0;
+}
