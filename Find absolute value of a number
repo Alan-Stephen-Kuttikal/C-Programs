@@ -4,7 +4,7 @@ int main()
 {
 	int a,b;
 	printf("Enter a number:");
-	scanf("%d",&a);
+	scanf("%f",&a);
 	b=abs(a);
 	printf("Absolute value of is %d",b);
 	return 0;
