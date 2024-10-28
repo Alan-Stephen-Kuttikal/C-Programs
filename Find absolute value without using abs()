@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+	int a;
+	printf("Enter a value:");
+	scanf("%f",&a);
+	printf("Absolute value is %d",a);
+	return 0;
+}
