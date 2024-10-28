@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main()
+{
+	int a;
+	printf("Enter a number:");
+	scanf("%d",&a);
+	if(a<0)
+	{
+		printf("Yet to be born");
+	}
+	else if(a>0 && a<12)
+	{
+		printf("Kid");
+	}
+	else if(a>12 && a<20)
+	{
+		printf("Teenager");
+	}
+	else if(a>20 && a<35)
+	{
+		printf("Young Adult");
+	}
+	else if(a>35 && a<50)
+	{
+		printf("Adult");
+	}
+	else if(a>50 && a<100)
+	{
+	printf("Senior citizen");
+	}
+	else if(a>100 && a<111)
+	{
+		printf("One of the oldest human alive");
+	}
+	else
+	{
+		printf("Please enter a proper age");
+	}
+	return 0;
+}
