@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int a,b;
+	printf("Enter a number:");
+	scanf("%d",&a);
+	b=abs(a);
+	printf("Absolute value of is %d",b);
+	return 0;
+}
