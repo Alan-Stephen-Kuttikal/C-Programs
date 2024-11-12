@@ -1,0 +1,45 @@
+#include<stdio.h>
+int main()
+{
+	int n,m,p,q,i,j;
+	printf("Enter Rows in an array:");
+	scanf("%d",&n);
+	printf("Enter Columns in an array:");
+	scanf("%d",&m);
+	int a[n][m];
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<m;j++)
+		{
+			printf("a[%d][%d]=",i,j);
+			scanf("%d",&a[i][j]);
+		}
+	}
+	printf("Enter Rows in an array:");
+	scanf("%d",&p);
+	printf("Enter Columns in an array:");
+	scanf("%d",&q);
+	int b[p][q];
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<m;j++)
+		{
+			printf("b[%d][%d]=",i,j);
+			scanf("%d",&b[i][j]);
+		}
+	}
+	if(n==p && m==q)
+	{
+		for(i=0;i<n;i++)
+		{
+			for(j=0;j<m;j++)
+			{
+				printf("%d\t",a[i][j]+b[i][j]);
+			}
+			printf("\n");
+		}
+	}
+	else
+		printf("Matrix addition not possible");
+	return 0;
+}
