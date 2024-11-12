@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+	int n,i,s,c,b;
+	printf("Enter the number:");
+	scanf("%d",&n);
+	c=n;
+	b=1;
+	s=0;
+	while(n>0)
+	{
+		for(i=1;i<=n;i++)
+		{
+			b=b*i;
+		}
+		s=s+b;
+		b=1;
+		n--;
+	}
+	printf("Sum of all factorials till %d is %d",c,s);
+	return 0;
+}
