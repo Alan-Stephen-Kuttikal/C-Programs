@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main()
+{
+	int r,c,i,j,n;
+	printf("Enter rows of the matrix:");
+	scanf("%d",&r);
+	printf("Enter columns of the matrix:");
+	scanf("%d",&c);
+	int a[r][c];
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			printf("a[%d][%d]=",i,j);
+			scanf("%d",&a[i][j]);
+		}
+	}
+	printf("Enter number to multiply the matrix with:");
+	scanf("%d",&n);
+	printf("Original Matrix:-\n");
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			printf("%d\t",a[i][j]);
+		}
+		printf("\n");
+	}
+	printf("Scalar Multiplication by %d:-\n",n);
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			printf("%d\t",a[i][j]*n);
+		}
+		printf("\n");
+	}
+	return 0;
+}
