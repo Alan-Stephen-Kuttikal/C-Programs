@@ -1,0 +1,43 @@
+#include<stdio.h>
+int main()
+{
+	int s,r,c,i,j,n;
+	s=0;
+	printf("Enter rows of the matrix:");
+	scanf("%d",&r);
+	printf("Enter columns of the matrix:");
+	scanf("%d",&c);
+	int a[r][c],b[r][c];
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			printf("a[%d][%d]=",i,j);
+			scanf("%d",&a[i][j]);
+		}
+	}
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			b[i][j]=a[j][i];
+		}
+	}
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			if(b[i][j]==a[i][j])
+				s=1;
+			else
+			{
+				s=0;
+				printf("It is not  a symmetric matrix");
+				return 0;
+			}
+		}
+	}
+	if(s==1)
+		printf("It is a symmetric matrix");
+	return 0;
+}
