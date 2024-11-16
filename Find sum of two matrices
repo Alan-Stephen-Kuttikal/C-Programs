@@ -1,38 +1,38 @@
 #include<stdio.h>
 int main()
 {
-	int n,m,p,q,i,j;
+	int r1,c1,r2,c2,i,j;
 	printf("Enter Rows in an array:");
-	scanf("%d",&n);
+	scanf("%d",&r1);
 	printf("Enter Columns in an array:");
-	scanf("%d",&m);
-	int a[n][m];
-	for(i=0;i<n;i++)
+	scanf("%d",&c1);
+	int a[r1][c1];
+	for(i=0;i<r1;i++)
 	{
-		for(j=0;j<m;j++)
+		for(j=0;j<c1;j++)
 		{
 			printf("a[%d][%d]=",i,j);
 			scanf("%d",&a[i][j]);
 		}
 	}
 	printf("Enter Rows in an array:");
-	scanf("%d",&p);
+	scanf("%d",&r2);
 	printf("Enter Columns in an array:");
-	scanf("%d",&q);
-	int b[p][q];
-	for(i=0;i<n;i++)
+	scanf("%d",&c2);
+	int b[r2][c2];
+	for(i=0;i<r2;i++)
 	{
-		for(j=0;j<m;j++)
+		for(j=0;j<c2;j++)
 		{
 			printf("b[%d][%d]=",i,j);
 			scanf("%d",&b[i][j]);
 		}
 	}
-	if(n==p && m==q)
+	if(r1==r2 && c1==c2)
 	{
-		for(i=0;i<n;i++)
+		for(i=0;i<r1;i++)
 		{
-			for(j=0;j<m;j++)
+			for(j=0;j<c1;j++)
 			{
 				printf("%d\t",a[i][j]+b[i][j]);
 			}
