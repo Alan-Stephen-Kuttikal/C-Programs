@@ -1,0 +1,44 @@
+#include<stdio.h>
+int main()
+{
+	int s,r,c,i,j,n,r1,c1,l;
+	l=0;
+	s=0;
+	printf("Enter rows of the matrix:");
+	scanf("%d",&r);
+	printf("Enter columns of the matrix:");
+	scanf("%d",&c);
+	int a[r][c];
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			printf("a[%d][%d]=",i,j);
+			scanf("%d",&a[i][j]);
+		}
+	}
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			if(a[i][j]>l)
+			{
+				l=a[i][j];
+			
+			}
+		}
+	}
+	printf("Largest element in the matrix is %d\n",l);
+	printf("It's positions are:-\n");
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			if(a[i][j]==l)
+			{
+				printf("(%d,%d)\n",i,j);
+			}
+		}
+	}
+	return 0;
+}
