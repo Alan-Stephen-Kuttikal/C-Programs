@@ -1,0 +1,16 @@
+#include<stdio.h>
+int Sum(int i,int j)
+{
+	printf("Sum=%d",i+j);
+	return 1;
+}
+int main()
+{
+	int a,b;
+	printf("Enter first number:");
+	scanf("%d",&a);
+	printf("Enter second number:");
+	scanf("%d",&b);
+	Sum(a,b);
+	return 0;
+}
