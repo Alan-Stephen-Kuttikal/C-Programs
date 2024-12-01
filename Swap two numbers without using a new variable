@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,m;
+	printf("Enter first number:");
+	scanf("%d",&a);
+	printf("Enter second number:");
+	scanf("%d",&b);
+	if(a==b)
+	{
+		printf("Numbers are same");
+		return 0;
+	}
+	else if(b>a)
+	{
+		m=b-a;
+		a=a+m;
+		b=b-m;
+	}
+	else if(a>b)
+	{
+		m=a-b;
+		a=a-m;
+		b=b+m;
+	}
+	printf("New First number=%d\nNew second number=%d\n",a,b);
+	return 0;
+}
