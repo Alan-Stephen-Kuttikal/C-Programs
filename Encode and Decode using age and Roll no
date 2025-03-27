@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	int a,r;
+	printf("Enter your age:");
+	scanf("%d",&a);
+	printf("Enter your roll no:");
+	scanf("%d",&r);
+	a=a^r;
+	printf("Encoded Age=%d\n",a);
+	a=a^r;
+	printf("Decoded Age =%d",a);
+	return 0;
+}
