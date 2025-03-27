@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+	int a,b;
+	printf("Enter First number:");
+	scanf("%d",&a);
+	printf("Enter Second number:");
+	scanf("%d",&b);
+	switch(a>b)
+	{
+		case 1:
+			printf("%d is the larger number",a);
+			break;
+		case 0:
+			printf("%d is the larger number",b);
+			break;
+	}
+	return 0;	
+}
